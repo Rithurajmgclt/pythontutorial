@@ -1,0 +1,21 @@
+l1=[(66,3,-5,7,-9,777,64,12)] # output [3,7,-5,12,-9,64,66,777] no change in index of negative numbers arrage posative numbers in ascending order
+
+l2=[]
+for i in l1:
+    list4=list(i)
+    for j in list4:
+        
+        if j > 0:
+            k=max(list4)
+            l2.insert(0,k)
+            list4.remove(k)
+    for j in list4:       
+        if j<0:
+            l2.insert(list4.index(j),j)
+               
+print(l2)                    
+                
+            
+            
+                    
+            
